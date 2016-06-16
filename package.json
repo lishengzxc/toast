@@ -1,11 +1,12 @@
 {
-  "name": "toast",
-  "version": "0.1.0",
-  "description": "",
+  "name": "ttoast",
+  "version": "0.1.2",
+  "description": "Mobile Toast Component",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
+  "main": "build/toast.js",
   "author": "lishengzxc",
   "license": "MIT",
   "dependencies": {
