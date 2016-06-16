@@ -1,5 +1,4 @@
 require('./toast.css')
-import Events from 'events'
 
 class ToastsPool {
   constructor() {
