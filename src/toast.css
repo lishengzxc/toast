@@ -1,0 +1,53 @@
+@keyframes ttoast-drop {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes ttoast-rise {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.ttoast-box {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 23333;
+}
+
+.ttoast {
+  position: absolute;
+  bottom: 100px;
+  max-width: 80%;
+  background-color: rgba(50, 50, 50, .85);
+  color: #fff;
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  padding: 0 12px;
+  box-shadow: rgba(0, 0, 0, .12) 0px 1px 6px, rgba(0, 0, 0, .12) 0px 1px 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ttoast.show {
+  animation: ttoast-rise .1s ease-out;
+}
+
+.ttoast.hide {
+  animation: ttoast-drop .1s ease-out;
+}
