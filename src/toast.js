@@ -52,7 +52,7 @@ class ToastsPool {
 let toastsPool = new ToastsPool()
 
 class ToastItem {
-  constructor(message = null, className = null, iconClass = null) {
+  constructor(message) {
     this.item = this._createDOM(message)
   }
 
