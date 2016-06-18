@@ -1,6 +1,6 @@
 {
   "name": "ttoast",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Mobile Toast Component",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
@@ -13,7 +13,7 @@
     "babel-runtime": "^6.9.2"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
+    "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-plugin-transform-runtime": "^6.0.0",

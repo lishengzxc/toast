@@ -21,7 +21,7 @@ class ToastsPool {
       return new ToastItem(message)
     }
   }
-
+  
   toast(options) {
     options = options || {}
     let message, duration

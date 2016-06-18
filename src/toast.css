@@ -1,35 +1,34 @@
 @keyframes ttoast-drop {
   0% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 
   100% {
-    transform: translateY(10px);
+    transform: translate(-50%, 10px);
   }
 }
 
 @keyframes ttoast-rise {
   0% {
-    transform: translateY(10px);
+    transform: translate(-50%, 10px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 }
 
 .ttoast-box {
   position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
+  bottom: 80px;
   width: 100%;
   z-index: 23333;
 }
 
 .ttoast {
   position: absolute;
-  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
   max-width: 80%;
   background-color: rgba(50, 50, 50, .85);
   color: #fff;

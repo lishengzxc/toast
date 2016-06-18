@@ -14,8 +14,11 @@
   <button id="toast">toast</button>
   <script src="build/toast.js"></script>
   <script>
-    toast.addEventListener('click', () => {
-      Toast('你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界你好世界')
+    toast.addEventListener('click', function() {
+      Toast({
+        message: '12312312312312',
+        duration: 100 * 1000
+      })
     }, false)
   </script>
 </body>

@@ -2,7 +2,7 @@ let path = require('path')
 let webpack = require('webpack')
 
 module.exports = {
-  entry: './src/toast.js',
+  entry: './src/toast.js',  
   output: {
     path: path.resolve(__dirname, './build'),
     publicPath: '/build/',
@@ -20,7 +20,7 @@ module.exports = {
       exclude: /node_modules|vue\/src|vue-router\/|vue-loader\/|vue-hot-reload-api\//,
     }, {
       test: /\.css$/,
-      loader: 'style-loader!css-loader'
+      loader: 'style-loader!css-loader!autoprefixer-loader'
     }]
   },
   devServer: {
