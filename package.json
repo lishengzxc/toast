@@ -1,6 +1,6 @@
 {
   "name": "ttoast",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Mobile Toast Component",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
